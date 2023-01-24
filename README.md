@@ -48,7 +48,7 @@ The results for the Logistic Regression Models are as follows:
         - Imbalanced Classification Report:
             - ![Classification Report ClusterCentroids](/analysis/ICR_CC.png)
 - Combination Over-/Under-Sampling
-    - SMOTEENN
+    - SMOTEENN (Synthetic Minority Oversampling Technique + Edited Nearest Neighbor)
         - Balanced Accuracy Score:
             - ![Accuracy Score SMOTEENN](/analysis/BAS_SMOTEENN.png)
         - Confusion Matrix:
