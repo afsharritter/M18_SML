@@ -20,13 +20,35 @@ The results for the Logistic Regression Models are as follows:
 
 - Over-Sampling
     - Random Over-Sampling
-        - Balanced Accuracy Score
-        - Confusion Matrix
-            - ![CM Random OS](/analysis/CM_RandomOS.png)
-        - Imbalanced Classification Report 
+        - Balanced Accuracy Score:
+            - ![Accuracy Score Random Over-Sampling](/analysis/BAS_RandomOS.png)
+        - Confusion Matrix:
+            - ![Confusion Matrix Random Over-Sampling](/analysis/CM_RandomOS.png)
+        - Imbalanced Classification Report:
+            - ![Classification Report Random Over-Sampling](/analysis/ICR_RandomOS.png)
     - SMOTE (Synthetic Minority Oversampling Technique)
+        - Balanced Accuracy Score:
+            - ![Accuracy Score SMOTE](/analysis/BAS_SMOTE.png)
+        - Confusion Matrix:
+            - ![Confusion Matrix SMOTE](/analysis/CM_SMOTE.png)
+        - Imbalanced Classification Report:
+            - ![Classification Report SMOTE](/analysis/ICR_SMOTE.png)
 - Under-Sampling
+    - Cluster Centroids
+        - Balanced Accuracy Score:
+            - ![Accuracy Score ClusterCentroids](/analysis/BAS_CC.png)
+        - Confusion Matrix:
+            - ![Confusion Matrix ClusterCentroids](/analysis/CM_CC.png)
+        - Imbalanced Classification Report:
+            - ![Classification Report ClusterCentroids](/analysis/ICR_CC.png)
 - Combination Over-/Under-Sampling
+    - SMOTEENN
+        - Balanced Accuracy Score:
+            - ![Accuracy Score SMOTEENN](/analysis/BAS_SMOTEENN.png)
+        - Confusion Matrix:
+            - ![Confusion Matrix SMOTEENN](/analysis/CM_SMOTEENN.png)
+        - Imbalanced Classification Report:
+            - ![Classification Report SMOTEENN](/analysis/ICR_SMOTEENN.png)    
 
 
 
