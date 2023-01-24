@@ -20,7 +20,11 @@ The results for the Logistic Regression Models are as follows:
 
 - Over-Sampling
     - Random Over-Sampling
-    - SMOTE ()
+        - Balanced Accuracy Score
+        - Confusion Matrix
+            - ![CM Random OS](/analysis/CM_RandomOS.png)
+        - Imbalanced Classification Report 
+    - SMOTE (Synthetic Minority Oversampling Technique)
 - Under-Sampling
 - Combination Over-/Under-Sampling
 
