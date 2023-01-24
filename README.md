@@ -28,17 +28,18 @@ The results for the Logistic Regression Models are as follows:
 
 - Over-Sampling
     - Random Over-Sampling
-        - Balanced Accuracy Score:
-            - ![Accuracy Score Random Over-Sampling](/analysis/BAS_RandomOS.png)
+        - Balanced Accuracy Score: 0.6515938052705158
         - Confusion Matrix:
-            - |        |Predicted 0|Predicted 1|
-              |--------|-----------|-----------|            
-              |Actual 0|         54|         33|
-              |--------|-----------|-----------|            
-              |Actual 1|       5435|      11683|
-            - ![Confusion Matrix Random Over-Sampling](/analysis/CM_RandomOS.png)
-        - Imbalanced Classification Report:
-            - ![Classification Report Random Over-Sampling](/analysis/ICR_RandomOS.png)
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         54|         33|
+            |Actual 1|       5435|      11683|
+        - Classification Report:
+            |         | pre| rec| spe|  f1| geo| iba|  sup|
+            |---------|----|----|----|----|----|----|-----|
+            |        0|0.01|0.62|0.68|0.02|0.65|0.42|   87|
+            |        1|1.00|0.68|0.62|0.81|0.65|0.43|17118|
+            |avg/total|0.99|0.68|0.62|0.81|0.65|0.43|17205|
     - SMOTE (Synthetic Minority Oversampling Technique)
         - Balanced Accuracy Score:
             - ![Accuracy Score SMOTE](/analysis/BAS_SMOTE.png)
