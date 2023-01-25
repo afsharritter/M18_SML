@@ -35,7 +35,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         70|         31|
             |Actual 1|       6387|      10717|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
             |        0|      0.01|   0.69|        0.63|      0.02|  101|
             |        1|      1.00|   0.63|        0.69|      0.77|17104|
@@ -48,7 +48,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         63|         38|
             |Actual 1|       5268|      11836|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
             |        0|      0.01|   0.62|        0.69|      0.02|  101|
             |        1|      1.00|   0.69|        0.62|      0.82|17104|
@@ -62,7 +62,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         70|         31|
             |Actual 1|      10340|       6764|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
             |        0|0.01|0.69|0.40|0.01|  101|
             |        1|1.00|0.40|0.69|0.57|17104|
@@ -76,7 +76,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         72|         29|
             |Actual 1|       7474|       9630|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
             |        0|0.01|0.71|0.56|0.02|  101|
             |        1|1.00|0.56|0.71|0.72|17104|
@@ -93,7 +93,7 @@ The results for the Ensemble Classifier models are as follows:
             |Actual 0|         71|         30|
             |Actual 1|       2153|      14951|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
             |        0|0.03|0.70|0.87|0.06|  101|
             |        1|1.00|0.87|0.70|0.93|17104|
@@ -106,7 +106,7 @@ The results for the Ensemble Classifier models are as follows:
             |Actual 0|         92|          9|
             |Actual 1|       1118|      15986|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
             |        0|0.08|0.91|0.93|0.14|  101|
             |        1|1.00|0.93|0.91|0.97|17104|
