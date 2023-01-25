@@ -35,11 +35,11 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         70|         31|
             |Actual 1|       6387|      10717|
         - Classification Report:
-            |         | pre| rec| spe|  f1| geo| iba|  sup|
-            |---------|----|----|----|----|----|----|-----|
-            |        0|0.01|0.69|0.63|0.02|0.66|0.44|  101|
-            |        1|1.00|0.63|0.69|0.77|0.66|0.43|17104|
-            |avg/total|0.99|0.63|0.69|0.77|0.66|0.43|17205|
+            |         | precision| recall| specificity|  f1 score|    n|
+            |---------|----------|-------|------------|----------|-----|
+            |        0|      0.01|   0.69|        0.63|      0.02|  101|
+            |        1|      1.00|   0.63|        0.69|      0.77|17104|
+            |avg/total|      0.99|   0.63|        0.69|      0.77|17205|
     - SMOTE (Synthetic Minority Oversampling Technique)
         - Balanced Accuracy Score: 0.657882123572507
         - Confusion Matrix:
@@ -48,11 +48,11 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         63|         38|
             |Actual 1|       5268|      11836|
         - Classification Report:
-            |         | pre| rec| spe|  f1| geo| iba|  sup|
-            |---------|----|----|----|----|----|----|-----|
-            |        0|0.01|0.62|0.69|0.02|0.66|0.43|  101|
-            |        1|1.00|0.69|0.62|0.82|0.66|0.43|17104|
-            |avg/total|0.99|0.69|0.62|0.81|0.66|0.43|17205|
+            |         | precision| recall| specificity|  f1 score|    n|
+            |---------|----------|-------|------------|----------|-----|
+            |        0|      0.01|   0.62|        0.69|      0.02|  101|
+            |        1|      1.00|   0.69|        0.62|      0.82|17104|
+            |avg/total|      0.99|   0.69|        0.62|      0.81|17205|
 - Under-Sampling
     - Cluster Centroids
         - Balanced Accuracy Score: 0.5442661782548694
@@ -62,11 +62,11 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         70|         31|
             |Actual 1|      10340|       6764|
         - Classification Report:
-            |         | pre| rec| spe|  f1| geo| iba|  sup|
-            |---------|----|----|----|----|----|----|-----|
-            |        0|0.01|0.69|0.40|0.01|0.52|0.28|  101|
-            |        1|1.00|0.40|0.69|0.57|0.52|0.27|17104|
-            |avg/total|0.99|0.40|0.69|0.56|0.52|0.27|17205|
+            |         | precision| recall| specificity|  f1 score|    n|
+            |---------|----------|-------|------------|----------|-----|
+            |        0|0.01|0.69|0.40|0.01|  101|
+            |        1|1.00|0.40|0.69|0.57|17104|
+            |avg/total|0.99|0.40|0.69|0.56|17205|
 - Combination Over-/Under-Sampling
     - SMOTEENN (Synthetic Minority Oversampling Technique + Edited Nearest Neighbor)
         - Balanced Accuracy Score: 0.637948739916087
