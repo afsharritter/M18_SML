@@ -35,7 +35,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         70|         31|
             |Actual 1|       6387|      10717|
         - Classification Report:
-            |         | precision| recall| specificity|  f1 score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
             |---------|----------|-------|------------|----------|-----|
             |        0|      0.01|   0.69|        0.63|      0.02|  101|
             |        1|      1.00|   0.63|        0.69|      0.77|17104|
@@ -48,7 +48,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         63|         38|
             |Actual 1|       5268|      11836|
         - Classification Report:
-            |         | precision| recall| specificity|  f1 score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
             |---------|----------|-------|------------|----------|-----|
             |        0|      0.01|   0.62|        0.69|      0.02|  101|
             |        1|      1.00|   0.69|        0.62|      0.82|17104|
@@ -62,7 +62,7 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         70|         31|
             |Actual 1|      10340|       6764|
         - Classification Report:
-            |         | precision| recall| specificity|  f1 score|    n|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
             |---------|----------|-------|------------|----------|-----|
             |        0|0.01|0.69|0.40|0.01|  101|
             |        1|1.00|0.40|0.69|0.57|17104|
@@ -76,11 +76,11 @@ The results for the Sampling + Logistic Regression models are as follows:
             |Actual 0|         72|         29|
             |Actual 1|       7474|       9630|
         - Classification Report:
-            |         | pre| rec| spe|  f1| geo| iba|  sup|
-            |---------|----|----|----|----|----|----|-----|
-            |        0|0.01|0.71|0.56|0.02|0.63|0.41|  101|
-            |        1|1.00|0.56|0.71|0.72|0.63|0.40|17104|
-            |avg/total|0.99|0.56|0.71|0.72|0.63|0.40|17205|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |---------|----------|-------|------------|----------|-----|
+            |        0|0.01|0.71|0.56|0.02|  101|
+            |        1|1.00|0.56|0.71|0.72|17104|
+            |avg/total|0.99|0.56|0.71|0.72|17205|
 
 The results for the Ensemble Classifier models are as follows:
 
@@ -93,11 +93,11 @@ The results for the Ensemble Classifier models are as follows:
             |Actual 0|         71|         30|
             |Actual 1|       2153|      14951|
         - Classification Report:
-            |         | pre| rec| spe|  f1| geo| iba|  sup|
-            |---------|----|----|----|----|----|----|-----|
-            |        0|0.03|0.70|0.87|0.06|0.78|0.60|  101|
-            |        1|1.00|0.87|0.70|0.93|0.78|0.62|17104|
-            |avg/total|0.99|0.87|0.70|0.93|0.78|0.62|17205|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |---------|----------|-------|------------|----------|-----|
+            |        0|0.03|0.70|0.87|0.06|  101|
+            |        1|1.00|0.87|0.70|0.93|17104|
+            |avg/total|0.99|0.87|0.70|0.93|17205|
     - Easy Ensemble AdaBoost Classifier
         - Balanced Accuracy Score: 0.9227631310839223
         - Confusion Matrix:
@@ -106,11 +106,11 @@ The results for the Ensemble Classifier models are as follows:
             |Actual 0|         92|          9|
             |Actual 1|       1118|      15986|
         - Classification Report:
-            |         | pre| rec| spe|  f1| geo| iba|  sup|
-            |---------|----|----|----|----|----|----|-----|
-            |        0|0.08|0.91|0.93|0.14|0.92|0.85|  101|
-            |        1|1.00|0.93|0.91|0.97|0.92|0.85|17104|
-            |avg/total|0.99|0.93|0.91|0.96|0.92|0.85|17205|
+            |         | Precision| Sensitivity| Specificity|  f1 Score|    n|
+            |---------|----------|-------|------------|----------|-----|
+            |        0|0.08|0.91|0.93|0.14|  101|
+            |        1|1.00|0.93|0.91|0.97|17104|
+            |avg/total|0.99|0.93|0.91|0.96|17205|
 
 
 
