@@ -101,28 +101,29 @@ The results for the Ensemble Classifier models are as follows:
             |        1|1.00|0.87|0.70|0.93|17104|
             |avg/total|0.99|0.87|0.70|0.93|17205|
     - Easy Ensemble AdaBoost Classifier
-        - Balanced Accuracy Score: 0.9227631310839223
+        - Balanced Accuracy Score: 0.9156977349980087
         - Confusion Matrix:
-            |        |Predicted 0|Predicted 1|
-            |--------|-----------|-----------|
-            |Actual 0|         92|          9|
-            |Actual 1|       1118|      15986|
+            |        ||Predicted 0|Predicted 1|
+            |--------||-----------|-----------|
+            |Actual 0||         90|         11|
+            |Actual 1||       1021|      16083|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|0.08|0.91|0.93|0.14|  101|
-            |        1|1.00|0.93|0.91|0.97|17104|
-            |avg/total|0.99|0.93|0.91|0.96|17205|
+            |        0|0.08|0.89|0.94|0.15|  101|
+            |        1|1.00|0.94|0.89|0.97|17104|
+            |avg/total|0.99|0.94|0.89|0.96|17205|
 
 
 
 
-[^*]: low-risk
-[^**]: high-risk
+
 ## Summary
 
 
 ## References
 [^1]: edX Boot Camps LLC. (2023). How Logistic Regression Works. Bootcamp: UCB-VIRT-DATA-PT-08-2022-U-B-MW Page 18.3.3. Retrieved January 24, 2023, from https://courses.bootcampspot.com/courses/2315/pages/18-dot-3-3-how-logistic-regression-works?module_item_id=743247 
 [^2]: Roy, A. (2020, November 6). A dive into decision trees. Medium. Retrieved January 24, 2023, from https://towardsdatascience.com/a-dive-into-decision-trees-a128923c9298 
-[^3]: Nagpal, A. (2017, October 18). Decision tree ensembles- bagging and boosting. Medium. Retrieved January 24, 2023, from https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9#:~:text=Ensemble%20methods%2C%20which%20combines%20several,to%20form%20a%20strong%20learner. 
+[^3]: Nagpal, A. (2017, October 18). Decision tree ensembles- bagging and boosting. Medium. Retrieved January 24, 2023, from https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9#:~:text=Ensemble%20methods%2C%20which%20combines%20several,to%20form%20a%20strong%20learner
+[^*]: low-risk
+[^**]: high-risk
