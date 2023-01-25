@@ -30,31 +30,31 @@ The results for the Sampling + Logistic Regression models are as follows:
 
 - Over-Sampling
     - Random Over-Sampling
-        - Balanced Accuracy Score: 0.6598239425205383
+        - Balanced Accuracy Score: 0.7855483842376043
         - Confusion Matrix:
             |        |Predicted 0[^*]|Predicted 1[^**]|
             |--------|-----------|-----------|
-            |Actual 0|         70|         31|
-            |Actual 1|       6387|      10717|
+            |Actual 0|         62|         25|
+            |Actual 1|       2423|      14695|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|      0.01|   0.69|        0.63|      0.02|  101|
-            |        1|      1.00|   0.63|        0.69|      0.77|17104|
-            |avg/total|      0.99|   0.63|        0.69|      0.77|17205|
+            |        0|0.02|0.71|0.86|0.05|   87|
+            |        1|1.00|0.86|0.71|0.92|17118|
+            |avg/total|0.99|0.86|0.71|0.92|17205|
     - SMOTE (Synthetic Minority Oversampling Technique)
-        - Balanced Accuracy Score: 0.657882123572507
+        - Balanced Accuracy Score: 0.7958883772274395
         - Confusion Matrix:
             |        |Predicted 0|Predicted 1|
             |--------|-----------|-----------|
-            |Actual 0|         63|         38|
-            |Actual 1|       5268|      11836|
+            |Actual 0|         62|         25|
+            |Actual 1|       2069|      15049|
         - Classification Report:
-            |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
-            |---------|----------|-------|------------|----------|-----|
-            |        0|      0.01|   0.62|        0.69|      0.02|  101|
-            |        1|      1.00|   0.69|        0.62|      0.82|17104|
-            |avg/total|      0.99|   0.69|        0.62|      0.81|17205|
+            |  |Precision| Sensitivity|Specificity|f1 Score|*n*|
+            |--|---------|------------|-----------|--------|---|
+            |        0|0.03|0.71|0.88|0.06|   87|
+            |        1|1.00|0.88|0.71|0.93|17118|
+            |avg/total|0.99|0.88|0.71|0.93|17205|
 - Under-Sampling
     - Cluster Centroids
         - Balanced Accuracy Score: 0.5442661782548694
@@ -66,53 +66,53 @@ The results for the Sampling + Logistic Regression models are as follows:
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|0.01|0.69|0.40|0.01|  101|
-            |        1|1.00|0.40|0.69|0.57|17104|
-            |avg/total|0.99|0.40|0.69|0.56|17205|
+            |        0|0.02|0.78|0.77|0.03|   87|
+            |        1|1.00|0.77|0.78|0.87|17118|
+            |avg/total|0.99|0.77|0.78|0.86|17205|
 - Combination Over-/Under-Sampling
     - SMOTEENN (Synthetic Minority Oversampling Technique + Edited Nearest Neighbor)
-        - Balanced Accuracy Score: 0.64103730005835
+        - Balanced Accuracy Score: 0.7750200434307908
         - Confusion Matrix:
             |        |Predicted 0|Predicted 1|
             |--------|-----------|-----------|
-            |Actual 0|         71|         30|
-            |Actual 1|       7199|       9905|
+            |Actual 0|         68|         19|
+            |Actual 1|       3964|      13154|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|0.01|0.70|0.58|0.02|  101|
-            |        1|1.00|0.58|0.70|0.73|17104|
-            |avg/total|0.99|0.58|0.70|0.73|17205|
+            |        0|0.03|0.72|0.87|0.05|   87|
+            |        1|1.00|0.87|0.72|0.93|17118|
+            |avg/total|0.99|0.87|0.72|0.93|17205|
 
 The results for the Ensemble Classifier models are as follows:
 
 - Ensemble Classifiers
     - Balanced Random Forest Classifier
-        - Balanced Accuracy Score: 0.7885466545953005
+        - Balanced Accuracy Score: 0.7872122911555088
         - Confusion Matrix:
             |        |Predicted 0|Predicted 1|
             |--------|-----------|-----------|
-            |Actual 0|         71|         30|
-            |Actual 1|       2153|      14951|
+            |Actual 0|         58|         29|
+            |Actual 1|       1579|      15539|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|0.03|0.70|0.87|0.06|  101|
-            |        1|1.00|0.87|0.70|0.93|17104|
-            |avg/total|0.99|0.87|0.70|0.93|17205|
+            |        0|0.04|0.67|0.91|0.07|   87|
+            |        1|1.00|0.91|0.67|0.95|17118|
+            |avg/total|0.99|0.91|0.67|0.95|17205|
     - Easy Ensemble AdaBoost Classifier
-        - Balanced Accuracy Score: 0.9156977349980087
+        - Balanced Accuracy Score: 0.9171974650599691
         - Confusion Matrix:
             |        |Predicted 0|Predicted 1|
             |--------|-----------|-----------|
-            |Actual 0|         90|         11|
-            |Actual 1|       1021|      16083|
+            |Actual 0|         78|          9|
+            |Actual 1|       1064|      16054|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|0.08|0.89|0.94|0.15|  101|
-            |        1|1.00|0.94|0.89|0.97|17104|
-            |avg/total|0.99|0.94|0.89|0.96|17205|
+            |        0|0.07|0.90|0.94|0.13|   87|
+            |        1|1.00|0.94|0.90|0.97|17118|
+            |avg/total|0.99|0.94|0.90|0.96|17205|
 
 
 
