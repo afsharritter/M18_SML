@@ -103,10 +103,10 @@ The results for the Ensemble Classifier models are as follows:
     - Easy Ensemble AdaBoost Classifier
         - Balanced Accuracy Score: 0.9156977349980087
         - Confusion Matrix:
-            |        |-|Predicted 0|Predicted 1|
-            |--------|-|-----------|-----------|
-            |Actual 0|-|         90|         11|
-            |Actual 1|-|       1021|      16083|
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         90|         11|
+            |Actual 1|       1021|      16083|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
