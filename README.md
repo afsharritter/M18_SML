@@ -6,7 +6,7 @@ Machine learning models have proven invaluable in the loan and credit industry, 
 
 ### Dataset
 
-The dataset of 68,817 rows and 86 columns of loan application data was then separated into the loan application's *input features* like loan amount, credit history, and demographic information from the *target variable,* which classifies the loan application's status as either low- or high-risk. This dataset was then used to train various supervised machine learning models to predict credit risk based on a loan application's input features. Preliminary analysis of the dataset shows a total of 68,817 rows spread over 86 columns of variable datatypes. After separating the *input features* from the *target variable,* it was noted that a considerable imbalance exists between the value counts of each binary outcome in the *target variable* (low-risk 0: 68,470 | high-risk 1: 347).
+The dataset of 68,817 rows and 86 columns of loan application data was then separated into the loan application's *input features* like loan amount, credit history, and demographic information from the *target variable,* which classifies the loan application's status as either low- or high-risk. This dataset was then used to train various supervised machine learning models to predict credit risk based on a loan application's input features. Preliminary analysis of the dataset shows a total of 68,817 rows spread over 86 columns of variable datatypes. After separating the *input features* from the *target variable,* it was noted that a considerable imbalance exists between the value counts of each binary outcome in the *target variable* (low-risk 1: 68,470 | high-risk 1: 347).
 
 ### Logistic Regression & Sampling Methods
 
@@ -22,6 +22,8 @@ The machine learning algorithms tested before Logistic Regression include two Ov
 
 + Balanced Accuracy Score - comparing the accuracy of the predicted target values compared to the actual target values
 + Confusion Matrix - displaying the number of predicted/actual outcomes
+    + Binary Value 0: 
+    + Binary Value 1:
 + Imbalanced Classification Report - presenting the precision, recall, specificity, f1 score, geometric mean, and index balanced accuracy
 
 The results for the Sampling + Logistic Regression models are as follows:
@@ -69,18 +71,18 @@ The results for the Sampling + Logistic Regression models are as follows:
             |avg/total|0.99|0.40|0.69|0.56|17205|
 - Combination Over-/Under-Sampling
     - SMOTEENN (Synthetic Minority Oversampling Technique + Edited Nearest Neighbor)
-        - Balanced Accuracy Score: 0.637948739916087
+        - Balanced Accuracy Score: 0.64103730005835
         - Confusion Matrix:
             |        |Predicted 0|Predicted 1|
             |--------|-----------|-----------|
-            |Actual 0|         72|         29|
-            |Actual 1|       7474|       9630|
+            |Actual 0|         71|         30|
+            |Actual 1|       7199|       9905|
         - Classification Report:
             |         | Precision| Sensitivity| Specificity|  f1 Score|   *n*|
             |---------|----------|-------|------------|----------|-----|
-            |        0|0.01|0.71|0.56|0.02|  101|
-            |        1|1.00|0.56|0.71|0.72|17104|
-            |avg/total|0.99|0.56|0.71|0.72|17205|
+            |        0|0.01|0.70|0.58|0.02|  101|
+            |        1|1.00|0.58|0.70|0.73|17104|
+            |avg/total|0.99|0.58|0.70|0.73|17205|
 
 The results for the Ensemble Classifier models are as follows:
 
