@@ -30,7 +30,7 @@ The results for the Sampling + Logistic Regression models are as follows:
     - Random Over-Sampling
         - Balanced Accuracy Score: 0.6598239425205383
         - Confusion Matrix:
-            |        |Predicted 0|Predicted 1|
+            |        |Predicted 0[^*]|Predicted 1[^**]|
             |--------|-----------|-----------|
             |Actual 0|         70|         31|
             |Actual 1|       6387|      10717|
@@ -115,7 +115,8 @@ The results for the Ensemble Classifier models are as follows:
 
 
 
-
+[^*]: low-risk
+[^**]: high-risk
 ## Summary
 
 
