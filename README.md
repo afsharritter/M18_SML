@@ -22,49 +22,95 @@ The machine learning algorithms tested before Logistic Regression include two Ov
 
 + Balanced Accuracy Score - comparing the accuracy of the predicted target values compared to the actual target values
 + Confusion Matrix - displaying the number of predicted/actual outcomes
-+ Imbalanced Classification Report - presenting the precision, recall, specificity, f1 score, geometric mean, and imbalanced accuracy 
++ Imbalanced Classification Report - presenting the precision, recall, specificity, f1 score, geometric mean, and index balanced accuracy
 
-The results for the Logistic Regression Models are as follows:
+The results for the Sampling + Logistic Regression models are as follows:
 
 - Over-Sampling
     - Random Over-Sampling
-        - Balanced Accuracy Score: 0.6515938052705158
+        - Balanced Accuracy Score: 0.6598239425205383
         - Confusion Matrix:
             |        |Predicted 0|Predicted 1|
             |--------|-----------|-----------|
-            |Actual 0|         54|         33|
-            |Actual 1|       5435|      11683|
+            |Actual 0|         70|         31|
+            |Actual 1|       6387|      10717|
         - Classification Report:
             |         | pre| rec| spe|  f1| geo| iba|  sup|
             |---------|----|----|----|----|----|----|-----|
-            |        0|0.01|0.62|0.68|0.02|0.65|0.42|   87|
-            |        1|1.00|0.68|0.62|0.81|0.65|0.43|17118|
-            |avg/total|0.99|0.68|0.62|0.81|0.65|0.43|17205|
+            |        0|0.01|0.69|0.63|0.02|0.66|0.44|  101|
+            |        1|1.00|0.63|0.69|0.77|0.66|0.43|17104|
+            |avg/total|0.99|0.63|0.69|0.77|0.66|0.43|17205|
     - SMOTE (Synthetic Minority Oversampling Technique)
-        - Balanced Accuracy Score:
-            - ![Accuracy Score SMOTE](/analysis/BAS_SMOTE.png)
+        - Balanced Accuracy Score: 0.657882123572507
         - Confusion Matrix:
-            - ![Confusion Matrix SMOTE](/analysis/CM_SMOTE.png)
-        - Imbalanced Classification Report:
-            - ![Classification Report SMOTE](/analysis/ICR_SMOTE.png)
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         63|         38|
+            |Actual 1|       5268|      11836|
+        - Classification Report:
+            |         | pre| rec| spe|  f1| geo| iba|  sup|
+            |---------|----|----|----|----|----|----|-----|
+            |        0|0.01|0.62|0.69|0.02|0.66|0.43|  101|
+            |        1|1.00|0.69|0.62|0.82|0.66|0.43|17104|
+            |avg/total|0.99|0.69|0.62|0.81|0.66|0.43|17205|
 - Under-Sampling
     - Cluster Centroids
-        - Balanced Accuracy Score:
-            - ![Accuracy Score ClusterCentroids](/analysis/BAS_CC.png)
+        - Balanced Accuracy Score: 0.5442661782548694
         - Confusion Matrix:
-            - ![Confusion Matrix ClusterCentroids](/analysis/CM_CC.png)
-        - Imbalanced Classification Report:
-            - ![Classification Report ClusterCentroids](/analysis/ICR_CC.png)
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         70|         31|
+            |Actual 1|      10340|       6764|
+        - Classification Report:
+            |         | pre| rec| spe|  f1| geo| iba|  sup|
+            |---------|----|----|----|----|----|----|-----|
+            |        0|0.01|0.69|0.40|0.01|0.52|0.28|  101|
+            |        1|1.00|0.40|0.69|0.57|0.52|0.27|17104|
+            |avg/total|0.99|0.40|0.69|0.56|0.52|0.27|17205|
 - Combination Over-/Under-Sampling
     - SMOTEENN (Synthetic Minority Oversampling Technique + Edited Nearest Neighbor)
-        - Balanced Accuracy Score:
-            - ![Accuracy Score SMOTEENN](/analysis/BAS_SMOTEENN.png)
+        - Balanced Accuracy Score: 0.637948739916087
         - Confusion Matrix:
-            - ![Confusion Matrix SMOTEENN](/analysis/CM_SMOTEENN.png)
-        - Imbalanced Classification Report:
-            - ![Classification Report SMOTEENN](/analysis/ICR_SMOTEENN.png)
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         72|         29|
+            |Actual 1|       7474|       9630|
+        - Classification Report:
+            |         | pre| rec| spe|  f1| geo| iba|  sup|
+            |---------|----|----|----|----|----|----|-----|
+            |        0|0.01|0.71|0.56|0.02|0.63|0.41|  101|
+            |        1|1.00|0.56|0.71|0.72|0.63|0.40|17104|
+            |avg/total|0.99|0.56|0.71|0.72|0.63|0.40|17205|
 
+The results for the Ensemble Classifier models are as follows:
 
+- Ensemble Classifiers
+    - Balanced Random Forest Classifier
+        - Balanced Accuracy Score: 0.7885466545953005
+        - Confusion Matrix:
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         71|         30|
+            |Actual 1|       2153|      14951|
+        - Classification Report:
+            |         | pre| rec| spe|  f1| geo| iba|  sup|
+            |---------|----|----|----|----|----|----|-----|
+            |        0|0.03|0.70|0.87|0.06|0.78|0.60|  101|
+            |        1|1.00|0.87|0.70|0.93|0.78|0.62|17104|
+            |avg/total|0.99|0.87|0.70|0.93|0.78|0.62|17205|
+    - Easy Ensemble AdaBoost Classifier
+        - Balanced Accuracy Score: 0.9227631310839223
+        - Confusion Matrix:
+            |        |Predicted 0|Predicted 1|
+            |--------|-----------|-----------|
+            |Actual 0|         92|          9|
+            |Actual 1|       1118|      15986|
+        - Classification Report:
+            |         | pre| rec| spe|  f1| geo| iba|  sup|
+            |---------|----|----|----|----|----|----|-----|
+            |        0|0.08|0.91|0.93|0.14|0.92|0.85|  101|
+            |        1|1.00|0.93|0.91|0.97|0.92|0.85|17104|
+            |avg/total|0.99|0.93|0.91|0.96|0.92|0.85|17205|
 
 
 
