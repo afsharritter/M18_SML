@@ -116,10 +116,11 @@ The results for the Ensemble Classifier models are as follows:
 
 
 
-
-
 ## Summary
 
+The machine learning model with the best Accuracy, Precision, and F1 Scores was the Easy Ensemble Classifier (91.7%, prec=0.99, f1=0.96). This was followed by the SMOTE oversampling Algorithm (79.6%, prec=0.99, f1=0.93) and the Balanced Random Forest Classifier (78.7%, prec=0.99, f1=0.95)). The Cluster Centroids Undersampling Algorithm had the lowest accuracy, precision, and f1 scores, receiving 54.4%, 0.99, 0.86, respectively. 
+
+The Easy Ensemble AdaBoost Classifier provided the best balanced accuracy and f1 score out of the six machine learning models tested. I would recommend using an ensemble classifier since these machine learning models are generally resistant to linear features of the data, and provide the best accuracy in predicting credit risk. 
 
 ## References
 [^1]: edX Boot Camps LLC. (2023). How Logistic Regression Works. Bootcamp: UCB-VIRT-DATA-PT-08-2022-U-B-MW Page 18.3.3. Retrieved January 24, 2023, from https://courses.bootcampspot.com/courses/2315/pages/18-dot-3-3-how-logistic-regression-works?module_item_id=743247 
